@@ -1,0 +1,1165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body {
+  background-color: #f9fafa;
+  font-family: "Inter", sans-serif;
+  padding-top: 9rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #eef1f1;
+  width: 100%;
+  color: #fff;
+  padding: 2.35rem 1.5rem 2.45rem 1.5rem;
+}
+.iconandsubscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.tbclogo {
+  filter: drop-shadow(0 0 0 rgba(85, 95, 98, 1));
+  cursor: pointer;
+}
+
+.searchicon {
+  filter: drop-shadow(0 0 0 rgba(85, 95, 98, 1));
+  cursor: pointer;
+}
+
+.subscribeP {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  color: rgba(24, 44, 192, 1);
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 0.4rem;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.hr1 {
+  width: 1.1rem;
+  border-top: 0.2rem solid #555f62;
+}
+
+.hr2 {
+  width: 2rem;
+  border-top: 0.3rem solid #555f62;
+}
+
+.hr3 {
+  width: 1.5rem;
+  border-top: 0.26rem solid #555f62;
+}
+
+.arrowandparagraph {
+  display: flex;
+  padding: 1.5rem 2rem 4.8rem;
+  flex-wrap: wrap;
+  gap: 1.03em;
+  align-items: center;
+}
+
+.arrow {
+  border: solid;
+  color: #141719;
+  opacity: 0.6;
+  border-width: 0 0.2rem 0.2rem 0;
+  display: inline-block;
+  padding: 0.2rem;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.paragrapharrow {
+  color: #141719;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.Chairphoto {
+  width: 100%;
+  height: 51.7%;
+  filter: brightness(75%);
+  position: absolute;
+  min-height: 28.5rem;
+  max-height: 34.5rem;
+}
+
+.Pconteiner {
+  position: relative;
+  padding: 17.2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.51rem;
+}
+
+.Pconteiner h2,
+.subscribeconteiner p,
+.subscribetbcconcept,
+.selectpackage,
+.imageparagraph,
+.readmore p,
+.numbers {
+  font-weight: 700;
+}
+
+.Pconteiner h2 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.Pconteiner p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscribeconteiner {
+  gap: 0.733rem;
+  background: linear-gradient(62.62deg, #001682 0%, #3240e5 100%);
+  padding: 1.752rem 12.355rem 1.647rem 13.355rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribeconteiner img {
+  filter: brightness(0) invert(1);
+  width: 1.333rem;
+  height: 1.067rem;
+}
+
+.subscribeconteiner p {
+  font-size: 1.2rem;
+  line-height: 1.596rem;
+}
+
+.subscribetbcconcept {
+  font-size: 2.5rem;
+  line-height: 3.6rem;
+  text-align: left;
+  color: rgba(20, 23, 25, 1);
+  margin: 4.81rem 2.6rem 0 1.5rem;
+}
+
+.selectpackage {
+  font-size: 1.378rem;
+  line-height: 2.1rem;
+  text-align: left;
+  margin: 7.8rem 2.6rem 0 2rem;
+}
+
+.selectpackage2 {
+  margin-top: 7.4rem;
+}
+
+.slider {
+  display: flex;
+  gap: 1.6rem;
+  cursor: grab;
+  overflow-x: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 0.2rem;
+}
+
+.slider:active {
+  cursor: grabbing;
+}
+
+.slide {
+  min-width: 28rem;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  filter: brightness(70%);
+}
+
+.imageparagraph {
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  bottom: 6.743rem;
+  left: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.readmore {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.733rem;
+  bottom: 2.953rem;
+  left: 2.4rem;
+}
+
+.readmore img {
+  width: 1.5rem;
+  height: 1.1rem;
+  filter: brightness(10) saturate(0) invert(0);
+  cursor: pointer;
+}
+
+.readmore p {
+  font-size: 1.2rem;
+  line-height: 1.68rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.slideroverflow {
+  overflow: hidden;
+}
+
+.slideroverflow img {
+  filter: brightness(100%);
+  width: 29.214rem;
+  height: 16.984rem;
+}
+.indicator-container {
+  margin-top: 1rem;
+  width: 100%;
+  height: 0.2rem;
+  background: rgba(209, 213, 214, 1);
+}
+
+.indicator {
+  height: 100%;
+  width: 20%;
+  background: rgba(24, 44, 192, 1);
+
+  position: relative;
+  left: 0;
+}
+
+.userquantity {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+  margin-top: 6.731rem;
+}
+
+.quantityconteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+  padding-left: 2.4rem;
+}
+
+.numbers {
+  font-size: 3.206rem;
+
+  line-height: 4.68rem;
+  text-align: left;
+}
+
+.about {
+  font-size: 1.378rem;
+  font-weight: 500;
+  line-height: 2.38rem;
+  text-align: left;
+  color: rgba(85, 95, 98, 1);
+}
+
+.alloffers {
+  margin-top: 10.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.alloffers p {
+  font-size: 1.4rem;
+  font-weight: 1000;
+  line-height: 2.1rem;
+  text-align: left;
+  color: rgba(20, 23, 25, 1);
+}
+
+.offersvector {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.offersvector img {
+  width: 1.333rem;
+  height: 1.067rem;
+}
+
+.offersvector p {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  line-height: 1.68rem;
+  text-align: left;
+  color: rgba(24, 44, 192, 1);
+}
+
+.sliderimagecolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.598rem;
+  border: 1px solid rgba(225, 228, 229, 1);
+  border-radius: 1rem;
+}
+
+.sliderimagecolumn h3 {
+  font-size: 1.634rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: left;
+  color: rgba(23, 23, 25, 1);
+  padding-left: 2.1rem;
+}
+.sliderimagecolumn img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.paragraphcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphgap {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 2.1rem;
+}
+
+.paragraphgap p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.04rem;
+  text-align: left;
+  color: rgba(111, 120, 123, 1);
+}
+
+.downloadapp {
+  margin-top: 7.2rem;
+  padding: 3.2rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.digitalbank {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  text-align: left;
+  color: rgba(20, 23, 25, 1);
+}
+
+.girlphoto {
+  margin-top: 7.2rem;
+}
+
+.Pconteiner2 {
+  padding-top: 26.4rem;
+}
+
+.performbanking {
+  font-size: 1.51rem;
+  font-weight: 400;
+  line-height: 2.38rem;
+  text-align: left;
+  color: rgba(85, 95, 98, 1);
+}
+
+.downloadapp img {
+  width: 34.5rem;
+  height: 46.972rem;
+}
+
+.telephone {
+  background: rgba(249, 250, 250, 1);
+  border: 1px solid rgba(24, 44, 192, 1);
+}
+
+.telephone p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.596rem;
+  text-align: left;
+
+  color: rgba(24, 44, 192, 1);
+}
+
+.telephone img {
+  filter: sepia(1) saturate(10) hue-rotate(200deg) brightness(0.7);
+  width: 1.6rem;
+  height: 1.367rem;
+}
+
+.h3andproduct {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding-left: 2.1rem;
+  padding-right: 2.4rem;
+  padding-bottom: 2.168rem;
+}
+
+.h3andproduct h3 {
+  padding: 0;
+}
+
+.producttester {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 2.04rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+.producttester strong {
+  font-size: 1.1103rem;
+  font-weight: 700;
+  line-height: 2.04rem;
+  color: black;
+}
+
+.slidergirlimage img {
+  width: 11.817rem;
+  height: 5.2rem;
+}
+
+.slidergirlimage .thebankerimage {
+  width: 5.2rem;
+}
+
+.slidergirlimage .euromoney {
+  width: 9.36rem;
+}
+.lastslide {
+  padding-top: 2.8rem;
+  border: none;
+}
+.h3andparagraph {
+  padding: 0;
+  gap: 1.6rem;
+}
+
+.h3andparagraph p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.38rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+footer {
+  margin-top: 2.4rem;
+}
+
+.tbclogolanguage {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.6rem 2.68rem 0;
+}
+
+.tbclogofooter {
+  filter: brightness(20%);
+}
+
+.languageandparagraph {
+  display: flex;
+  gap: 0.533rem;
+  align-items: center;
+}
+
+.languageandparagraph p {
+  font-size: 1.389rem;
+  font-weight: 700;
+  line-height: 2.38rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+.productlifestyle {
+  margin-top: 4.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+.product {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.product p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: rgba(20, 23, 25, 1);
+}
+
+.product img {
+  width: 1.633rem;
+  color: rgba(20, 23, 25, 1);
+}
+
+.contact {
+  padding: 3.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.callus {
+  font-size: 1.588rem;
+  font-weight: 700;
+  line-height: 2.72rem;
+  color: rgba(20, 23, 25, 1);
+}
+
+.numberemail {
+  display: flex;
+  gap: 1.262rem;
+  align-items: flex-start;
+}
+
+.numberemail p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.38rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+.social {
+  margin-bottom: 2.4rem;
+  font-size: 1.563rem;
+  font-weight: 700;
+  line-height: 2.72rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.socialweb {
+  padding-left: 1.5rem;
+  display: flex;
+  gap: 5.443rem;
+  margin-bottom: 5rem;
+}
+
+.confidenceallsecurity {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #f9fafa;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2.4rem;
+}
+
+.confidence {
+  padding-top: 2.4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.confidence p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.38rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+.allsecurity {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.allsecurity img {
+  width: 2.2rem;
+  height: 1.8rem;
+  filter: brightness(120%);
+}
+
+.allsecurity p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.38rem;
+  color: rgba(85, 95, 98, 1);
+}
+
+.tbclogo {
+  position: relative;
+  top: 0.5rem;
+}
+
+.performbanking br {
+  display: none;
+}
+
+.pconteinerbr br {
+  display: none;
+}
+
+.paragraphsheader {
+  display: none;
+}
+
+.googleplaystore {
+  display: none;
+}
+.appstore {
+  display: none;
+}
+
+.tabletparagraph {
+  display: none;
+}
+
+.noneparagraph {
+  display: none;
+}
+.product img {
+  width: 1.5rem;
+  height: 0.7rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .Pconteiner {
+    max-width: 100%;
+    align-items: stretch;
+  }
+  .tabletparagraph {
+    color: rgba(85, 95, 98, 1);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .tabletparagraph {
+    display: block;
+  }
+
+  header {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+  .subscribeP {
+    font-size: 1.8rem;
+  }
+  .tbclogo {
+    width: 2.2rem;
+  }
+
+  .vl {
+    border-left: 0.1rem solid rgba(85, 95, 98, 1);
+    height: 3.2rem;
+  }
+
+  .VltabletP {
+    display: flex;
+    align-items: center;
+    gap: 0.938rem;
+    margin-right: 19rem;
+  }
+
+  .arrowandparagraph {
+    margin-left: 1.6rem;
+  }
+
+  .Chairphoto {
+    width: 67.8rem;
+    height: 43.425rem;
+    margin: 0 4.5rem 0;
+    max-height: none;
+  }
+
+  .Pconteiner {
+    padding: 27rem 22.8rem 0 9rem;
+  }
+
+  .Pconteiner h2 {
+    font-size: 2.4rem;
+  }
+
+  .subscribeconteiner {
+    padding: 1.5rem 1.7rem;
+    cursor: pointer;
+  }
+
+  .subscribetbcconcept {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 8rem 2rem 0 4.2rem;
+  }
+
+  .selectpackage {
+    font-size: 2.4rem;
+    padding-left: 2rem;
+  }
+
+  .tabletslideimage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tabletslidergrid {
+    overflow: unset;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+    padding: 0 4rem 0;
+  }
+
+  .tabletslide {
+    grid-area: span 2 / span 1 / span 2 / span 1;
+  }
+
+  .imageparagraph {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .readmore p {
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+  }
+
+  .userquantity {
+    margin-left: 4.8rem;
+    gap: 11rem;
+  }
+
+  .numbers {
+    font-size: 3.919rem;
+    line-height: 5.72rem;
+  }
+
+  .about {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    text-align: left;
+  }
+
+  .alloffers p {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  .offersvector p {
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+  }
+
+  .tabletslideimage2 img {
+    width: 32.95rem;
+    height: 20.164rem;
+  }
+
+  .paragraphgap p {
+    font-size: 1.2rem;
+    line-height: 2.04rem;
+  }
+
+  .paragraphgap h3 {
+    font-size: 1.588rem;
+    line-height: 3rem;
+  }
+  .sliderimagecolumn {
+    gap: 2.03rem;
+    padding-bottom: 3rem;
+  }
+  .indicator-container {
+    margin-top: 3.5rem;
+  }
+
+  .downloadapp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flexendphone {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 90%;
+  }
+
+  .digitalbank {
+    position: relative;
+    top: 15rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .telephone {
+    position: relative;
+    bottom: 30rem;
+  }
+  .performbanking {
+    position: relative;
+    bottom: 32rem;
+  }
+
+  .performbanking br {
+    display: block;
+  }
+
+  .productselecpackage {
+    padding-left: 0;
+  }
+
+  .h3andparagraph h3 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .producttester p {
+    font-size: 1.367rem;
+    line-height: 2.38rem;
+  }
+
+  .producttester strong {
+    font-size: 1.367rem;
+    line-height: 2.38rem;
+  }
+
+  .girlphoto {
+    margin-top: 10rem;
+    width: 90%;
+  }
+
+  .Pconteiner2 {
+    top: 7rem;
+  }
+
+  .selectpackage2 {
+    margin-top: 19rem;
+  }
+
+  .slidertablet {
+    padding-left: 4.2rem;
+  }
+
+  .tbclogolanguage {
+    margin-top: 12rem;
+  }
+
+  .tbclogofooter {
+    width: 2.2rem;
+  }
+
+  .tabletparagraph2 {
+    color: rgba(20, 23, 25, 1);
+  }
+
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .productlifestyle,
+  .contact,
+  .social,
+  .socialweb {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .productlifestyle {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 0;
+    justify-content: center;
+  }
+
+  .contact,
+  .social,
+  .socialweb {
+    position: static;
+    text-align: center;
+  }
+
+  .socialweb {
+    justify-content: flex-end;
+    padding-right: 7.5rem;
+    padding-top: 3.1rem;
+  }
+
+  .social {
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2.9rem;
+  }
+
+  .contact {
+    padding: 0;
+  }
+
+  .tbclogolanguage {
+    padding-bottom: 6rem;
+  }
+
+  .confidenceallsecurity {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.38rem;
+  }
+
+  .productlifestyle hr,
+  .product img,
+  .tablethrnone,
+  .arrow {
+    display: none;
+  }
+
+  .confidenceallsecurity {
+    padding-top: 6.9rem;
+    padding-bottom: 3.4rem;
+  }
+
+  .confidence {
+    padding-top: 0;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 2.3rem;
+  }
+
+  .paragraphsheader {
+    display: none;
+  }
+
+  .googleplaystore {
+    display: none;
+  }
+  .appstore {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .googleplaystore {
+    display: block;
+  }
+
+  .tabletparagraph {
+    display: block;
+  }
+  .appstore {
+    display: block;
+  }
+  .Chairphoto {
+    width: 90%;
+  }
+  .Pconteiner {
+    padding: 17rem 8rem 8rem 8rem;
+    gap: 1.6rem;
+  }
+
+  .pconteinerbr br {
+    display: block;
+  }
+
+  .paragraphsheader {
+    display: block;
+  }
+
+  .paragraphsheader {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    position: relative;
+    right: 100px;
+  }
+
+  .paragraphsheader p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    color: rgba(34, 34, 34, 1);
+    white-space: pre;
+  }
+
+  .subscribetbcconcept {
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+  }
+
+  .userquantity {
+    flex-direction: row;
+    gap: 20rem;
+  }
+
+  .numbers {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .alloffers {
+    margin-left: 3rem;
+  }
+
+  .slideroverflow {
+    padding-left: 4rem;
+  }
+  .googleplaystore {
+    position: relative;
+    bottom: 30rem;
+    cursor: pointer;
+  }
+  .appstore {
+    position: relative;
+    bottom: 36.6rem;
+    left: 15rem;
+    cursor: pointer;
+  }
+
+  .googleplaystore img {
+    width: 13rem;
+    height: 2rem;
+  }
+
+  .telephone {
+    display: none;
+  }
+
+  .appstore img {
+    width: 13rem;
+    height: 2rem;
+  }
+
+  .productselecpackage {
+    margin-left: 4rem;
+  }
+
+  .selectpackage2 {
+    margin-top: 25rem;
+  }
+  .productlifestyle {
+    gap: 5rem;
+  }
+  .confidence {
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1080px){
+.indicatornone {
+  display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .indicatornone {
+    display: none;
+  }
+
+  .tabletparagraph {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .tabletparagraph {
+    display: block;
+  }
+  .subscribetbcconcept {
+    font-size: 36px;
+  }
+  .googleplaystore {
+    display: block;
+  }
+  .appstore {
+    display: block;
+  }
+
+  .userquantity {
+    justify-content: center;
+    gap: 25rem;
+  }
+
+  .tabletslideimage2 img {
+    width: 100%;
+  }
+
+  .indicatornone {
+    display: none;
+  }
+
+  .slidertablet {
+    gap: 7rem;
+    padding-right: 80rem;
+  }
+
+  .productlifestyle {
+    gap: 20rem;
+  }
+}
